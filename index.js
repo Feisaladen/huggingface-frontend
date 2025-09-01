@@ -3,7 +3,7 @@ const questionInput = document.getElementById("question");
 const askBtn = document.getElementById("askBtn");
 
 // Deployed backend URL
-const API_BASE = "https://huggingface-backend-4.onrender.com";
+const API_BASE = " https://huggingface-backend-5.onrender.com";
 
 // List of banned words for kid-safe filtering
 const bannedWords = [
@@ -69,5 +69,6 @@ askBtn.addEventListener("click", askQuestion);
 questionInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") askQuestion();
 });
+
 
 
