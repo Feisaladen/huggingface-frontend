@@ -3,7 +3,7 @@ const questionInput = document.getElementById("question");
 const askBtn = document.getElementById("askBtn");
 
 // Deployed backend URL
-const API_BASE = " https://huggingface-backend-5.onrender.com";
+const API_BASE = "https://huggingface-backend-2.onrender.com";
 
 // List of banned words for kid-safe filtering
 const bannedWords = [
@@ -53,7 +53,7 @@ async function askQuestion() {
     chatBox.lastChild.remove();
 
     // Filter the bot response for kid-safety
-    const filteredAnswer = filterText(data[0]?.generated_text || "Sorry, no response.");
+    const filteredAnswer = filterText(data.answer || "Sorry, no response.");
     addMessage(filteredAnswer, "bot");
   } catch (err) {
     chatBox.lastChild.remove();
@@ -69,6 +69,5 @@ askBtn.addEventListener("click", askQuestion);
 questionInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") askQuestion();
 });
-
 
 
