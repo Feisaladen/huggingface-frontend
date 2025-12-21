@@ -1,41 +1,36 @@
-# Edu Bot  
 
-Edu Bot is an **AI-powered tutor** designed to support African children with accessible, interactive, and culturally relevant education. It aims to bridge the gap in learning resources by providing a digital tutor that works across multiple devices and environments.  
+Edu Bot Frontend 🎓
+An AI-powered educational platform providing accessible, interactive, and culturally relevant learning experiences for African children.
+🌟 Overview
+Edu Bot's frontend delivers an intuitive, responsive interface that makes quality education accessible across devices. Built with modern web technologies, it ensures smooth performance even in low-bandwidth environments.
+✨ Features
 
----
+📚 Interactive Learning Interface – Clean, user-friendly design for homework help and educational content
+🌍 Multilingual Support – Seamless language switching between English, Kiswahili, French, Arabic, Somali, and more
+📱 Responsive Design – Works flawlessly on mobile phones, tablets, and desktops
+⚡ Performance Optimized – Fast loading times optimized for low-bandwidth connections
+🎨 Culturally Relevant UI – Design elements and content tailored to African contexts
+🎯 Interactive Components – Quizzes, exercises, and engaging learning modules
+♿ Accessible – Built with accessibility best practices for inclusive learning
 
-## Features  
-- **Homework Assistance** – Provides step-by-step answers to questions across subjects such as mathematics, science, languages, and history.  
-- **Multilingual Support** – Supports English, Kiswahili, French, Arabic, Somali, and other regional languages.  
-- **Interactive Learning** – Includes quizzes, exercises, and storytelling to make learning engaging.  
-- **Offline-Friendly** – Optimized for low bandwidth environments and can be adapted for SMS/USSD access.  
-- **Culturally Relevant** – Content and examples tailored to African contexts and experiences.  
+🛠️ Tech Stack
 
----
+Framework: React 18+
+Styling: Tailwind CSS
+State Management: React Hooks (useState, useContext)
+HTTP Client: Axios / Fetch API
+Routing: React Router
+Deployment: Vercel
 
-## Why Edu Bot?  
-Many African students face barriers to quality education due to:  
-- Limited access to qualified teachers.  
-- High cost of textbooks and resources.  
-- Connectivity challenges in rural areas.  
+🚀 Getting Started
+Prerequisites
 
-Edu Bot addresses these challenges by offering:  
-- Affordable, always-available tutoring.  
-- Easy access to educational resources.  
-- Scalable solutions for schools and communities.  
+Node.js (v16 or higher)
+npm or yarn
 
----
+Installation
+bash# Clone the repository
+git clone https://github.com/Feisaladen/edubot-frontend.git
 
-## Tech Stack  
-- **Backend**: Node.js / Python (FastAPI), deployed on **Render**  
-- **Frontend**: React + Tailwind CSS, deployable on **Vercel**  
-- **AI Models**: Hugging Face (via API key integration)  
-
----
-
-## Environment Variables  
-
-Create a `.env` file in the backend folder and add:  
-```env
-HUGGINGFACE_API_KEY=your_api_key_here
-PORT=5000
+# Navigate to project directory
+cd edubot-frontend
